@@ -1,0 +1,1080 @@
+
+a.out:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000001000 <_init>:
+    1000:	f3 0f 1e fa          	endbr64 
+    1004:	48 83 ec 08          	sub    rsp,0x8
+    1008:	48 8b 05 c1 2f 00 00 	mov    rax,QWORD PTR [rip+0x2fc1]        # 3fd0 <__gmon_start__@Base>
+    100f:	48 85 c0             	test   rax,rax
+    1012:	74 02                	je     1016 <_init+0x16>
+    1014:	ff d0                	call   rax
+    1016:	48 83 c4 08          	add    rsp,0x8
+    101a:	c3                   	ret    
+
+Disassembly of section .plt:
+
+0000000000001020 <.plt>:
+    1020:	ff 35 12 2f 00 00    	push   QWORD PTR [rip+0x2f12]        # 3f38 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:	f2 ff 25 13 2f 00 00 	bnd jmp QWORD PTR [rip+0x2f13]        # 3f40 <_GLOBAL_OFFSET_TABLE_+0x10>
+    102d:	0f 1f 00             	nop    DWORD PTR [rax]
+    1030:	f3 0f 1e fa          	endbr64 
+    1034:	68 00 00 00 00       	push   0x0
+    1039:	f2 e9 e1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    103f:	90                   	nop
+    1040:	f3 0f 1e fa          	endbr64 
+    1044:	68 01 00 00 00       	push   0x1
+    1049:	f2 e9 d1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    104f:	90                   	nop
+    1050:	f3 0f 1e fa          	endbr64 
+    1054:	68 02 00 00 00       	push   0x2
+    1059:	f2 e9 c1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    105f:	90                   	nop
+    1060:	f3 0f 1e fa          	endbr64 
+    1064:	68 03 00 00 00       	push   0x3
+    1069:	f2 e9 b1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    106f:	90                   	nop
+    1070:	f3 0f 1e fa          	endbr64 
+    1074:	68 04 00 00 00       	push   0x4
+    1079:	f2 e9 a1 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    107f:	90                   	nop
+    1080:	f3 0f 1e fa          	endbr64 
+    1084:	68 05 00 00 00       	push   0x5
+    1089:	f2 e9 91 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    108f:	90                   	nop
+    1090:	f3 0f 1e fa          	endbr64 
+    1094:	68 06 00 00 00       	push   0x6
+    1099:	f2 e9 81 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    109f:	90                   	nop
+    10a0:	f3 0f 1e fa          	endbr64 
+    10a4:	68 07 00 00 00       	push   0x7
+    10a9:	f2 e9 71 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10af:	90                   	nop
+    10b0:	f3 0f 1e fa          	endbr64 
+    10b4:	68 08 00 00 00       	push   0x8
+    10b9:	f2 e9 61 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10bf:	90                   	nop
+    10c0:	f3 0f 1e fa          	endbr64 
+    10c4:	68 09 00 00 00       	push   0x9
+    10c9:	f2 e9 51 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10cf:	90                   	nop
+    10d0:	f3 0f 1e fa          	endbr64 
+    10d4:	68 0a 00 00 00       	push   0xa
+    10d9:	f2 e9 41 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10df:	90                   	nop
+    10e0:	f3 0f 1e fa          	endbr64 
+    10e4:	68 0b 00 00 00       	push   0xb
+    10e9:	f2 e9 31 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10ef:	90                   	nop
+    10f0:	f3 0f 1e fa          	endbr64 
+    10f4:	68 0c 00 00 00       	push   0xc
+    10f9:	f2 e9 21 ff ff ff    	bnd jmp 1020 <_init+0x20>
+    10ff:	90                   	nop
+
+Disassembly of section .plt.got:
+
+0000000000001100 <__cxa_finalize@plt>:
+    1100:	f3 0f 1e fa          	endbr64 
+    1104:	f2 ff 25 a5 2e 00 00 	bnd jmp QWORD PTR [rip+0x2ea5]        # 3fb0 <__cxa_finalize@GLIBC_2.2.5>
+    110b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .plt.sec:
+
+0000000000001110 <_ZSt9terminatev@plt>:
+    1110:	f3 0f 1e fa          	endbr64 
+    1114:	f2 ff 25 2d 2e 00 00 	bnd jmp QWORD PTR [rip+0x2e2d]        # 3f48 <_ZSt9terminatev@GLIBCXX_3.4>
+    111b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001120 <_ZNSt6thread6_StateD2Ev@plt>:
+    1120:	f3 0f 1e fa          	endbr64 
+    1124:	f2 ff 25 25 2e 00 00 	bnd jmp QWORD PTR [rip+0x2e25]        # 3f50 <_ZNSt6thread6_StateD2Ev@GLIBCXX_3.4.22>
+    112b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001130 <__cxa_atexit@plt>:
+    1130:	f3 0f 1e fa          	endbr64 
+    1134:	f2 ff 25 1d 2e 00 00 	bnd jmp QWORD PTR [rip+0x2e1d]        # 3f58 <__cxa_atexit@GLIBC_2.2.5>
+    113b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001140 <_ZNSt6thread15_M_start_threadESt10unique_ptrINS_6_StateESt14default_deleteIS1_EEPFvvE@plt>:
+    1140:	f3 0f 1e fa          	endbr64 
+    1144:	f2 ff 25 15 2e 00 00 	bnd jmp QWORD PTR [rip+0x2e15]        # 3f60 <_ZNSt6thread15_M_start_threadESt10unique_ptrINS_6_StateESt14default_deleteIS1_EEPFvvE@GLIBCXX_3.4.22>
+    114b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001150 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>:
+    1150:	f3 0f 1e fa          	endbr64 
+    1154:	f2 ff 25 0d 2e 00 00 	bnd jmp QWORD PTR [rip+0x2e0d]        # 3f68 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@GLIBCXX_3.4>
+    115b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001160 <_Znwm@plt>:
+    1160:	f3 0f 1e fa          	endbr64 
+    1164:	f2 ff 25 05 2e 00 00 	bnd jmp QWORD PTR [rip+0x2e05]        # 3f70 <_Znwm@GLIBCXX_3.4>
+    116b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001170 <_ZdlPvm@plt>:
+    1170:	f3 0f 1e fa          	endbr64 
+    1174:	f2 ff 25 fd 2d 00 00 	bnd jmp QWORD PTR [rip+0x2dfd]        # 3f78 <_ZdlPvm@CXXABI_1.3.9>
+    117b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001180 <_ZNSolsEPFRSoS_E@plt>:
+    1180:	f3 0f 1e fa          	endbr64 
+    1184:	f2 ff 25 f5 2d 00 00 	bnd jmp QWORD PTR [rip+0x2df5]        # 3f80 <_ZNSolsEPFRSoS_E@GLIBCXX_3.4>
+    118b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+0000000000001190 <__stack_chk_fail@plt>:
+    1190:	f3 0f 1e fa          	endbr64 
+    1194:	f2 ff 25 ed 2d 00 00 	bnd jmp QWORD PTR [rip+0x2ded]        # 3f88 <__stack_chk_fail@GLIBC_2.4>
+    119b:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000011a0 <_ZNSt8ios_base4InitC1Ev@plt>:
+    11a0:	f3 0f 1e fa          	endbr64 
+    11a4:	f2 ff 25 e5 2d 00 00 	bnd jmp QWORD PTR [rip+0x2de5]        # 3f90 <_ZNSt8ios_base4InitC1Ev@GLIBCXX_3.4>
+    11ab:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000011b0 <_ZNSt6thread4joinEv@plt>:
+    11b0:	f3 0f 1e fa          	endbr64 
+    11b4:	f2 ff 25 dd 2d 00 00 	bnd jmp QWORD PTR [rip+0x2ddd]        # 3f98 <_ZNSt6thread4joinEv@GLIBCXX_3.4.11>
+    11bb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000011c0 <_ZNSolsEi@plt>:
+    11c0:	f3 0f 1e fa          	endbr64 
+    11c4:	f2 ff 25 d5 2d 00 00 	bnd jmp QWORD PTR [rip+0x2dd5]        # 3fa0 <_ZNSolsEi@GLIBCXX_3.4>
+    11cb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+00000000000011d0 <_Unwind_Resume@plt>:
+    11d0:	f3 0f 1e fa          	endbr64 
+    11d4:	f2 ff 25 cd 2d 00 00 	bnd jmp QWORD PTR [rip+0x2dcd]        # 3fa8 <_Unwind_Resume@GCC_3.0>
+    11db:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+
+Disassembly of section .text:
+
+00000000000011e0 <_start>:
+    11e0:	f3 0f 1e fa          	endbr64 
+    11e4:	31 ed                	xor    ebp,ebp
+    11e6:	49 89 d1             	mov    r9,rdx
+    11e9:	5e                   	pop    rsi
+    11ea:	48 89 e2             	mov    rdx,rsp
+    11ed:	48 83 e4 f0          	and    rsp,0xfffffffffffffff0
+    11f1:	50                   	push   rax
+    11f2:	54                   	push   rsp
+    11f3:	45 31 c0             	xor    r8d,r8d
+    11f6:	31 c9                	xor    ecx,ecx
+    11f8:	48 8d 3d fb 00 00 00 	lea    rdi,[rip+0xfb]        # 12fa <main>
+    11ff:	ff 15 bb 2d 00 00    	call   QWORD PTR [rip+0x2dbb]        # 3fc0 <__libc_start_main@GLIBC_2.34>
+    1205:	f4                   	hlt    
+    1206:	66 2e 0f 1f 84 00 00 	cs nop WORD PTR [rax+rax*1+0x0]
+    120d:	00 00 00 
+
+0000000000001210 <deregister_tm_clones>:
+    1210:	48 8d 3d 01 2e 00 00 	lea    rdi,[rip+0x2e01]        # 4018 <__TMC_END__>
+    1217:	48 8d 05 fa 2d 00 00 	lea    rax,[rip+0x2dfa]        # 4018 <__TMC_END__>
+    121e:	48 39 f8             	cmp    rax,rdi
+    1221:	74 15                	je     1238 <deregister_tm_clones+0x28>
+    1223:	48 8b 05 9e 2d 00 00 	mov    rax,QWORD PTR [rip+0x2d9e]        # 3fc8 <_ITM_deregisterTMCloneTable@Base>
+    122a:	48 85 c0             	test   rax,rax
+    122d:	74 09                	je     1238 <deregister_tm_clones+0x28>
+    122f:	ff e0                	jmp    rax
+    1231:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+    1238:	c3                   	ret    
+    1239:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+0000000000001240 <register_tm_clones>:
+    1240:	48 8d 3d d1 2d 00 00 	lea    rdi,[rip+0x2dd1]        # 4018 <__TMC_END__>
+    1247:	48 8d 35 ca 2d 00 00 	lea    rsi,[rip+0x2dca]        # 4018 <__TMC_END__>
+    124e:	48 29 fe             	sub    rsi,rdi
+    1251:	48 89 f0             	mov    rax,rsi
+    1254:	48 c1 ee 3f          	shr    rsi,0x3f
+    1258:	48 c1 f8 03          	sar    rax,0x3
+    125c:	48 01 c6             	add    rsi,rax
+    125f:	48 d1 fe             	sar    rsi,1
+    1262:	74 14                	je     1278 <register_tm_clones+0x38>
+    1264:	48 8b 05 6d 2d 00 00 	mov    rax,QWORD PTR [rip+0x2d6d]        # 3fd8 <_ITM_registerTMCloneTable@Base>
+    126b:	48 85 c0             	test   rax,rax
+    126e:	74 08                	je     1278 <register_tm_clones+0x38>
+    1270:	ff e0                	jmp    rax
+    1272:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+    1278:	c3                   	ret    
+    1279:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+0000000000001280 <__do_global_dtors_aux>:
+    1280:	f3 0f 1e fa          	endbr64 
+    1284:	80 3d c5 2e 00 00 00 	cmp    BYTE PTR [rip+0x2ec5],0x0        # 4150 <completed.0>
+    128b:	75 2b                	jne    12b8 <__do_global_dtors_aux+0x38>
+    128d:	55                   	push   rbp
+    128e:	48 83 3d 1a 2d 00 00 	cmp    QWORD PTR [rip+0x2d1a],0x0        # 3fb0 <__cxa_finalize@GLIBC_2.2.5>
+    1295:	00 
+    1296:	48 89 e5             	mov    rbp,rsp
+    1299:	74 0c                	je     12a7 <__do_global_dtors_aux+0x27>
+    129b:	48 8b 3d 66 2d 00 00 	mov    rdi,QWORD PTR [rip+0x2d66]        # 4008 <__dso_handle>
+    12a2:	e8 59 fe ff ff       	call   1100 <__cxa_finalize@plt>
+    12a7:	e8 64 ff ff ff       	call   1210 <deregister_tm_clones>
+    12ac:	c6 05 9d 2e 00 00 01 	mov    BYTE PTR [rip+0x2e9d],0x1        # 4150 <completed.0>
+    12b3:	5d                   	pop    rbp
+    12b4:	c3                   	ret    
+    12b5:	0f 1f 00             	nop    DWORD PTR [rax]
+    12b8:	c3                   	ret    
+    12b9:	0f 1f 80 00 00 00 00 	nop    DWORD PTR [rax+0x0]
+
+00000000000012c0 <frame_dummy>:
+    12c0:	f3 0f 1e fa          	endbr64 
+    12c4:	e9 77 ff ff ff       	jmp    1240 <register_tm_clones>
+
+00000000000012c9 <tSum>:
+    12c9:	f3 0f 1e fa          	endbr64 
+    12cd:	55                   	push   rbp
+    12ce:	48 89 e5             	mov    rbp,rsp
+    12d1:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+    12d8:	eb 13                	jmp    12ed <tSum+0x24>
+    12da:	8b 05 74 2e 00 00    	mov    eax,DWORD PTR [rip+0x2e74]        # 4154 <sum>
+    12e0:	83 c0 01             	add    eax,0x1
+    12e3:	89 05 6b 2e 00 00    	mov    DWORD PTR [rip+0x2e6b],eax        # 4154 <sum>
+    12e9:	83 45 fc 01          	add    DWORD PTR [rbp-0x4],0x1
+    12ed:	81 7d fc 0f 27 00 00 	cmp    DWORD PTR [rbp-0x4],0x270f
+    12f4:	7e e4                	jle    12da <tSum+0x11>
+    12f6:	90                   	nop
+    12f7:	90                   	nop
+    12f8:	5d                   	pop    rbp
+    12f9:	c3                   	ret    
+
+00000000000012fa <main>:
+    12fa:	f3 0f 1e fa          	endbr64 
+    12fe:	55                   	push   rbp
+    12ff:	48 89 e5             	mov    rbp,rsp
+    1302:	53                   	push   rbx
+    1303:	48 83 ec 28          	sub    rsp,0x28
+    1307:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    130e:	00 00 
+    1310:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    1314:	31 c0                	xor    eax,eax
+    1316:	48 8d 45 d8          	lea    rax,[rbp-0x28]
+    131a:	48 8d 15 a8 ff ff ff 	lea    rdx,[rip+0xffffffffffffffa8]        # 12c9 <tSum>
+    1321:	48 89 d6             	mov    rsi,rdx
+    1324:	48 89 c7             	mov    rdi,rax
+    1327:	e8 04 02 00 00       	call   1530 <_ZNSt6threadC1IRFvvEJEvEEOT_DpOT0_>
+    132c:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+    1330:	48 8d 15 92 ff ff ff 	lea    rdx,[rip+0xffffffffffffff92]        # 12c9 <tSum>
+    1337:	48 89 d6             	mov    rsi,rdx
+    133a:	48 89 c7             	mov    rdi,rax
+    133d:	e8 ee 01 00 00       	call   1530 <_ZNSt6threadC1IRFvvEJEvEEOT_DpOT0_>
+    1342:	48 8d 45 d8          	lea    rax,[rbp-0x28]
+    1346:	48 89 c7             	mov    rdi,rax
+    1349:	e8 62 fe ff ff       	call   11b0 <_ZNSt6thread4joinEv@plt>
+    134e:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+    1352:	48 89 c7             	mov    rdi,rax
+    1355:	e8 56 fe ff ff       	call   11b0 <_ZNSt6thread4joinEv@plt>
+    135a:	48 8d 05 a3 0c 00 00 	lea    rax,[rip+0xca3]        # 2004 <_IO_stdin_used+0x4>
+    1361:	48 89 c6             	mov    rsi,rax
+    1364:	48 8d 05 d5 2c 00 00 	lea    rax,[rip+0x2cd5]        # 4040 <_ZSt4cout@GLIBCXX_3.4>
+    136b:	48 89 c7             	mov    rdi,rax
+    136e:	e8 dd fd ff ff       	call   1150 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+    1373:	48 89 c2             	mov    rdx,rax
+    1376:	8b 05 d8 2d 00 00    	mov    eax,DWORD PTR [rip+0x2dd8]        # 4154 <sum>
+    137c:	89 c6                	mov    esi,eax
+    137e:	48 89 d7             	mov    rdi,rdx
+    1381:	e8 3a fe ff ff       	call   11c0 <_ZNSolsEi@plt>
+    1386:	48 8b 15 2b 2c 00 00 	mov    rdx,QWORD PTR [rip+0x2c2b]        # 3fb8 <_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GLIBCXX_3.4>
+    138d:	48 89 d6             	mov    rsi,rdx
+    1390:	48 89 c7             	mov    rdi,rax
+    1393:	e8 e8 fd ff ff       	call   1180 <_ZNSolsEPFRSoS_E@plt>
+    1398:	bb 00 00 00 00       	mov    ebx,0x0
+    139d:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+    13a1:	48 89 c7             	mov    rdi,rax
+    13a4:	e8 e7 00 00 00       	call   1490 <_ZNSt6threadD1Ev>
+    13a9:	48 8d 45 d8          	lea    rax,[rbp-0x28]
+    13ad:	48 89 c7             	mov    rdi,rax
+    13b0:	e8 db 00 00 00       	call   1490 <_ZNSt6threadD1Ev>
+    13b5:	89 d8                	mov    eax,ebx
+    13b7:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    13bb:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    13c2:	00 00 
+    13c4:	74 3a                	je     1400 <main+0x106>
+    13c6:	eb 33                	jmp    13fb <main+0x101>
+    13c8:	f3 0f 1e fa          	endbr64 
+    13cc:	48 89 c3             	mov    rbx,rax
+    13cf:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+    13d3:	48 89 c7             	mov    rdi,rax
+    13d6:	e8 b5 00 00 00       	call   1490 <_ZNSt6threadD1Ev>
+    13db:	eb 07                	jmp    13e4 <main+0xea>
+    13dd:	f3 0f 1e fa          	endbr64 
+    13e1:	48 89 c3             	mov    rbx,rax
+    13e4:	48 8d 45 d8          	lea    rax,[rbp-0x28]
+    13e8:	48 89 c7             	mov    rdi,rax
+    13eb:	e8 a0 00 00 00       	call   1490 <_ZNSt6threadD1Ev>
+    13f0:	48 89 d8             	mov    rax,rbx
+    13f3:	48 89 c7             	mov    rdi,rax
+    13f6:	e8 d5 fd ff ff       	call   11d0 <_Unwind_Resume@plt>
+    13fb:	e8 90 fd ff ff       	call   1190 <__stack_chk_fail@plt>
+    1400:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    1404:	c9                   	leave  
+    1405:	c3                   	ret    
+
+0000000000001406 <_Z41__static_initialization_and_destruction_0ii>:
+    1406:	f3 0f 1e fa          	endbr64 
+    140a:	55                   	push   rbp
+    140b:	48 89 e5             	mov    rbp,rsp
+    140e:	48 83 ec 10          	sub    rsp,0x10
+    1412:	89 7d fc             	mov    DWORD PTR [rbp-0x4],edi
+    1415:	89 75 f8             	mov    DWORD PTR [rbp-0x8],esi
+    1418:	83 7d fc 01          	cmp    DWORD PTR [rbp-0x4],0x1
+    141c:	75 3b                	jne    1459 <_Z41__static_initialization_and_destruction_0ii+0x53>
+    141e:	81 7d f8 ff ff 00 00 	cmp    DWORD PTR [rbp-0x8],0xffff
+    1425:	75 32                	jne    1459 <_Z41__static_initialization_and_destruction_0ii+0x53>
+    1427:	48 8d 05 2a 2d 00 00 	lea    rax,[rip+0x2d2a]        # 4158 <_ZStL8__ioinit>
+    142e:	48 89 c7             	mov    rdi,rax
+    1431:	e8 6a fd ff ff       	call   11a0 <_ZNSt8ios_base4InitC1Ev@plt>
+    1436:	48 8d 05 cb 2b 00 00 	lea    rax,[rip+0x2bcb]        # 4008 <__dso_handle>
+    143d:	48 89 c2             	mov    rdx,rax
+    1440:	48 8d 05 11 2d 00 00 	lea    rax,[rip+0x2d11]        # 4158 <_ZStL8__ioinit>
+    1447:	48 89 c6             	mov    rsi,rax
+    144a:	48 8b 05 8f 2b 00 00 	mov    rax,QWORD PTR [rip+0x2b8f]        # 3fe0 <_ZNSt8ios_base4InitD1Ev@GLIBCXX_3.4>
+    1451:	48 89 c7             	mov    rdi,rax
+    1454:	e8 d7 fc ff ff       	call   1130 <__cxa_atexit@plt>
+    1459:	90                   	nop
+    145a:	c9                   	leave  
+    145b:	c3                   	ret    
+
+000000000000145c <_GLOBAL__sub_I_sum>:
+    145c:	f3 0f 1e fa          	endbr64 
+    1460:	55                   	push   rbp
+    1461:	48 89 e5             	mov    rbp,rsp
+    1464:	be ff ff 00 00       	mov    esi,0xffff
+    1469:	bf 01 00 00 00       	mov    edi,0x1
+    146e:	e8 93 ff ff ff       	call   1406 <_Z41__static_initialization_and_destruction_0ii>
+    1473:	5d                   	pop    rbp
+    1474:	c3                   	ret    
+    1475:	90                   	nop
+
+0000000000001476 <_ZNSt6thread2idC1Ev>:
+    1476:	f3 0f 1e fa          	endbr64 
+    147a:	55                   	push   rbp
+    147b:	48 89 e5             	mov    rbp,rsp
+    147e:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1482:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1486:	48 c7 00 00 00 00 00 	mov    QWORD PTR [rax],0x0
+    148d:	90                   	nop
+    148e:	5d                   	pop    rbp
+    148f:	c3                   	ret    
+
+0000000000001490 <_ZNSt6threadD1Ev>:
+    1490:	f3 0f 1e fa          	endbr64 
+    1494:	55                   	push   rbp
+    1495:	48 89 e5             	mov    rbp,rsp
+    1498:	48 83 ec 10          	sub    rsp,0x10
+    149c:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    14a0:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    14a4:	48 89 c7             	mov    rdi,rax
+    14a7:	e8 0c 00 00 00       	call   14b8 <_ZNKSt6thread8joinableEv>
+    14ac:	84 c0                	test   al,al
+    14ae:	74 05                	je     14b5 <_ZNSt6threadD1Ev+0x25>
+    14b0:	e8 5b fc ff ff       	call   1110 <_ZSt9terminatev@plt>
+    14b5:	90                   	nop
+    14b6:	c9                   	leave  
+    14b7:	c3                   	ret    
+
+00000000000014b8 <_ZNKSt6thread8joinableEv>:
+    14b8:	f3 0f 1e fa          	endbr64 
+    14bc:	55                   	push   rbp
+    14bd:	48 89 e5             	mov    rbp,rsp
+    14c0:	48 83 ec 20          	sub    rsp,0x20
+    14c4:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    14c8:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    14cf:	00 00 
+    14d1:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    14d5:	31 c0                	xor    eax,eax
+    14d7:	48 8d 45 f0          	lea    rax,[rbp-0x10]
+    14db:	48 89 c7             	mov    rdi,rax
+    14de:	e8 93 ff ff ff       	call   1476 <_ZNSt6thread2idC1Ev>
+    14e3:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    14e7:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+    14eb:	48 89 c6             	mov    rsi,rax
+    14ee:	48 8b 3a             	mov    rdi,QWORD PTR [rdx]
+    14f1:	e8 19 00 00 00       	call   150f <_ZSteqNSt6thread2idES0_>
+    14f6:	83 f0 01             	xor    eax,0x1
+    14f9:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    14fd:	64 48 2b 14 25 28 00 	sub    rdx,QWORD PTR fs:0x28
+    1504:	00 00 
+    1506:	74 05                	je     150d <_ZNKSt6thread8joinableEv+0x55>
+    1508:	e8 83 fc ff ff       	call   1190 <__stack_chk_fail@plt>
+    150d:	c9                   	leave  
+    150e:	c3                   	ret    
+
+000000000000150f <_ZSteqNSt6thread2idES0_>:
+    150f:	f3 0f 1e fa          	endbr64 
+    1513:	55                   	push   rbp
+    1514:	48 89 e5             	mov    rbp,rsp
+    1517:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    151b:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    151f:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    1523:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1527:	48 39 c2             	cmp    rdx,rax
+    152a:	0f 94 c0             	sete   al
+    152d:	5d                   	pop    rbp
+    152e:	c3                   	ret    
+    152f:	90                   	nop
+
+0000000000001530 <_ZNSt6threadC1IRFvvEJEvEEOT_DpOT0_>:
+    1530:	f3 0f 1e fa          	endbr64 
+    1534:	55                   	push   rbp
+    1535:	48 89 e5             	mov    rbp,rsp
+    1538:	53                   	push   rbx
+    1539:	48 83 ec 48          	sub    rsp,0x48
+    153d:	48 89 7d c8          	mov    QWORD PTR [rbp-0x38],rdi
+    1541:	48 89 75 c0          	mov    QWORD PTR [rbp-0x40],rsi
+    1545:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    154c:	00 00 
+    154e:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    1552:	31 c0                	xor    eax,eax
+    1554:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    1558:	48 89 c7             	mov    rdi,rax
+    155b:	e8 16 ff ff ff       	call   1476 <_ZNSt6thread2idC1Ev>
+    1560:	48 c7 45 e0 00 00 00 	mov    QWORD PTR [rbp-0x20],0x0
+    1567:	00 
+    1568:	48 8b 45 c0          	mov    rax,QWORD PTR [rbp-0x40]
+    156c:	48 89 c7             	mov    rdi,rax
+    156f:	e8 ab 00 00 00       	call   161f <_ZSt7forwardIRFvvEEOT_RNSt16remove_referenceIS2_E4typeE>
+    1574:	48 89 c3             	mov    rbx,rax
+    1577:	bf 10 00 00 00       	mov    edi,0x10
+    157c:	e8 df fb ff ff       	call   1160 <_Znwm@plt>
+    1581:	48 89 c7             	mov    rdi,rax
+    1584:	48 89 de             	mov    rsi,rbx
+    1587:	48 89 7d b8          	mov    QWORD PTR [rbp-0x48],rdi
+    158b:	e8 ea 00 00 00       	call   167a <_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvvEEEEEEC1IJRS3_EEEDpOT_>
+    1590:	48 8d 45 d8          	lea    rax,[rbp-0x28]
+    1594:	48 8b 75 b8          	mov    rsi,QWORD PTR [rbp-0x48]
+    1598:	48 89 c7             	mov    rdi,rax
+    159b:	e8 84 01 00 00       	call   1724 <_ZNSt10unique_ptrINSt6thread6_StateESt14default_deleteIS1_EEC1IS3_vEEPS1_>
+    15a0:	48 8d 4d d8          	lea    rcx,[rbp-0x28]
+    15a4:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+    15a8:	ba 00 00 00 00       	mov    edx,0x0
+    15ad:	48 89 ce             	mov    rsi,rcx
+    15b0:	48 89 c7             	mov    rdi,rax
+    15b3:	e8 88 fb ff ff       	call   1140 <_ZNSt6thread15_M_start_threadESt10unique_ptrINS_6_StateESt14default_deleteIS1_EEPFvvE@plt>
+    15b8:	48 8d 45 d8          	lea    rax,[rbp-0x28]
+    15bc:	48 89 c7             	mov    rdi,rax
+    15bf:	e8 8a 01 00 00       	call   174e <_ZNSt10unique_ptrINSt6thread6_StateESt14default_deleteIS1_EED1Ev>
+    15c4:	90                   	nop
+    15c5:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    15c9:	64 48 2b 04 25 28 00 	sub    rax,QWORD PTR fs:0x28
+    15d0:	00 00 
+    15d2:	74 45                	je     1619 <_ZNSt6threadC1IRFvvEJEvEEOT_DpOT0_+0xe9>
+    15d4:	eb 3e                	jmp    1614 <_ZNSt6threadC1IRFvvEJEvEEOT_DpOT0_+0xe4>
+    15d6:	f3 0f 1e fa          	endbr64 
+    15da:	48 89 c3             	mov    rbx,rax
+    15dd:	be 10 00 00 00       	mov    esi,0x10
+    15e2:	48 8b 7d b8          	mov    rdi,QWORD PTR [rbp-0x48]
+    15e6:	e8 85 fb ff ff       	call   1170 <_ZdlPvm@plt>
+    15eb:	48 89 d8             	mov    rax,rbx
+    15ee:	48 89 c7             	mov    rdi,rax
+    15f1:	e8 da fb ff ff       	call   11d0 <_Unwind_Resume@plt>
+    15f6:	f3 0f 1e fa          	endbr64 
+    15fa:	48 89 c3             	mov    rbx,rax
+    15fd:	48 8d 45 d8          	lea    rax,[rbp-0x28]
+    1601:	48 89 c7             	mov    rdi,rax
+    1604:	e8 45 01 00 00       	call   174e <_ZNSt10unique_ptrINSt6thread6_StateESt14default_deleteIS1_EED1Ev>
+    1609:	48 89 d8             	mov    rax,rbx
+    160c:	48 89 c7             	mov    rdi,rax
+    160f:	e8 bc fb ff ff       	call   11d0 <_Unwind_Resume@plt>
+    1614:	e8 77 fb ff ff       	call   1190 <__stack_chk_fail@plt>
+    1619:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    161d:	c9                   	leave  
+    161e:	c3                   	ret    
+
+000000000000161f <_ZSt7forwardIRFvvEEOT_RNSt16remove_referenceIS2_E4typeE>:
+    161f:	f3 0f 1e fa          	endbr64 
+    1623:	55                   	push   rbp
+    1624:	48 89 e5             	mov    rbp,rsp
+    1627:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    162b:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    162f:	5d                   	pop    rbp
+    1630:	c3                   	ret    
+    1631:	90                   	nop
+
+0000000000001632 <_ZNSt6thread6_StateC1Ev>:
+    1632:	f3 0f 1e fa          	endbr64 
+    1636:	55                   	push   rbp
+    1637:	48 89 e5             	mov    rbp,rsp
+    163a:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    163e:	48 8d 15 ab 26 00 00 	lea    rdx,[rip+0x26ab]        # 3cf0 <_ZTVNSt6thread6_StateE@GLIBCXX_3.4.22+0x10>
+    1645:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1649:	48 89 10             	mov    QWORD PTR [rax],rdx
+    164c:	90                   	nop
+    164d:	5d                   	pop    rbp
+    164e:	c3                   	ret    
+    164f:	90                   	nop
+
+0000000000001650 <_ZNSt5tupleIJPFvvEEEC1ILb1ELb1EEERKS1_>:
+    1650:	f3 0f 1e fa          	endbr64 
+    1654:	55                   	push   rbp
+    1655:	48 89 e5             	mov    rbp,rsp
+    1658:	48 83 ec 10          	sub    rsp,0x10
+    165c:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1660:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1664:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1668:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    166c:	48 89 d6             	mov    rsi,rdx
+    166f:	48 89 c7             	mov    rdi,rax
+    1672:	e8 3f 01 00 00       	call   17b6 <_ZNSt11_Tuple_implILm0EJPFvvEEEC1ERKS1_>
+    1677:	90                   	nop
+    1678:	c9                   	leave  
+    1679:	c3                   	ret    
+
+000000000000167a <_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvvEEEEEEC1IJRS3_EEEDpOT_>:
+    167a:	f3 0f 1e fa          	endbr64 
+    167e:	55                   	push   rbp
+    167f:	48 89 e5             	mov    rbp,rsp
+    1682:	53                   	push   rbx
+    1683:	48 83 ec 28          	sub    rsp,0x28
+    1687:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    168b:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+    168f:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    1696:	00 00 
+    1698:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    169c:	31 c0                	xor    eax,eax
+    169e:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    16a2:	48 89 c7             	mov    rdi,rax
+    16a5:	e8 88 ff ff ff       	call   1632 <_ZNSt6thread6_StateC1Ev>
+    16aa:	48 8d 15 ff 25 00 00 	lea    rdx,[rip+0x25ff]        # 3cb0 <_ZTVNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvvEEEEEEE+0x10>
+    16b1:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    16b5:	48 89 10             	mov    QWORD PTR [rax],rdx
+    16b8:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    16bc:	48 8d 58 08          	lea    rbx,[rax+0x8]
+    16c0:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+    16c4:	48 89 c7             	mov    rdi,rax
+    16c7:	e8 53 ff ff ff       	call   161f <_ZSt7forwardIRFvvEEOT_RNSt16remove_referenceIS2_E4typeE>
+    16cc:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+    16d0:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+    16d4:	48 89 c6             	mov    rsi,rax
+    16d7:	48 89 df             	mov    rdi,rbx
+    16da:	e8 71 ff ff ff       	call   1650 <_ZNSt5tupleIJPFvvEEEC1ILb1ELb1EEERKS1_>
+    16df:	90                   	nop
+    16e0:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    16e4:	64 48 2b 04 25 28 00 	sub    rax,QWORD PTR fs:0x28
+    16eb:	00 00 
+    16ed:	74 05                	je     16f4 <_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvvEEEEEEC1IJRS3_EEEDpOT_+0x7a>
+    16ef:	e8 9c fa ff ff       	call   1190 <__stack_chk_fail@plt>
+    16f4:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    16f8:	c9                   	leave  
+    16f9:	c3                   	ret    
+
+00000000000016fa <_ZNSt15__uniq_ptr_dataINSt6thread6_StateESt14default_deleteIS1_ELb1ELb1EECI1St15__uniq_ptr_implIS1_S3_EEPS1_>:
+    16fa:	f3 0f 1e fa          	endbr64 
+    16fe:	55                   	push   rbp
+    16ff:	48 89 e5             	mov    rbp,rsp
+    1702:	48 83 ec 10          	sub    rsp,0x10
+    1706:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    170a:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    170e:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1712:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    1716:	48 89 d6             	mov    rsi,rdx
+    1719:	48 89 c7             	mov    rdi,rax
+    171c:	e8 bf 00 00 00       	call   17e0 <_ZNSt15__uniq_ptr_implINSt6thread6_StateESt14default_deleteIS1_EEC1EPS1_>
+    1721:	90                   	nop
+    1722:	c9                   	leave  
+    1723:	c3                   	ret    
+
+0000000000001724 <_ZNSt10unique_ptrINSt6thread6_StateESt14default_deleteIS1_EEC1IS3_vEEPS1_>:
+    1724:	f3 0f 1e fa          	endbr64 
+    1728:	55                   	push   rbp
+    1729:	48 89 e5             	mov    rbp,rsp
+    172c:	48 83 ec 10          	sub    rsp,0x10
+    1730:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1734:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    1738:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    173c:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    1740:	48 89 d6             	mov    rsi,rdx
+    1743:	48 89 c7             	mov    rdi,rax
+    1746:	e8 af ff ff ff       	call   16fa <_ZNSt15__uniq_ptr_dataINSt6thread6_StateESt14default_deleteIS1_ELb1ELb1EECI1St15__uniq_ptr_implIS1_S3_EEPS1_>
+    174b:	90                   	nop
+    174c:	c9                   	leave  
+    174d:	c3                   	ret    
+
+000000000000174e <_ZNSt10unique_ptrINSt6thread6_StateESt14default_deleteIS1_EED1Ev>:
+    174e:	f3 0f 1e fa          	endbr64 
+    1752:	55                   	push   rbp
+    1753:	48 89 e5             	mov    rbp,rsp
+    1756:	53                   	push   rbx
+    1757:	48 83 ec 28          	sub    rsp,0x28
+    175b:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+    175f:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    1763:	48 89 c7             	mov    rdi,rax
+    1766:	e8 b1 00 00 00       	call   181c <_ZNSt15__uniq_ptr_implINSt6thread6_StateESt14default_deleteIS1_EE6_M_ptrEv>
+    176b:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+    176f:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1773:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1776:	48 85 c0             	test   rax,rax
+    1779:	74 29                	je     17a4 <_ZNSt10unique_ptrINSt6thread6_StateESt14default_deleteIS1_EED1Ev+0x56>
+    177b:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+    177f:	48 89 c7             	mov    rdi,rax
+    1782:	e8 b3 00 00 00       	call   183a <_ZNSt10unique_ptrINSt6thread6_StateESt14default_deleteIS1_EE11get_deleterEv>
+    1787:	48 89 c3             	mov    rbx,rax
+    178a:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    178e:	48 89 c7             	mov    rdi,rax
+    1791:	e8 c2 00 00 00       	call   1858 <_ZSt4moveIRPNSt6thread6_StateEEONSt16remove_referenceIT_E4typeEOS5_>
+    1796:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1799:	48 89 c6             	mov    rsi,rax
+    179c:	48 89 df             	mov    rdi,rbx
+    179f:	e8 c6 00 00 00       	call   186a <_ZNKSt14default_deleteINSt6thread6_StateEEclEPS1_>
+    17a4:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    17a8:	48 c7 00 00 00 00 00 	mov    QWORD PTR [rax],0x0
+    17af:	90                   	nop
+    17b0:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    17b4:	c9                   	leave  
+    17b5:	c3                   	ret    
+
+00000000000017b6 <_ZNSt11_Tuple_implILm0EJPFvvEEEC1ERKS1_>:
+    17b6:	f3 0f 1e fa          	endbr64 
+    17ba:	55                   	push   rbp
+    17bb:	48 89 e5             	mov    rbp,rsp
+    17be:	48 83 ec 10          	sub    rsp,0x10
+    17c2:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    17c6:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    17ca:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    17ce:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+    17d2:	48 89 d6             	mov    rsi,rdx
+    17d5:	48 89 c7             	mov    rdi,rax
+    17d8:	e8 bd 00 00 00       	call   189a <_ZNSt10_Head_baseILm0EPFvvELb0EEC1ERKS1_>
+    17dd:	90                   	nop
+    17de:	c9                   	leave  
+    17df:	c3                   	ret    
+
+00000000000017e0 <_ZNSt15__uniq_ptr_implINSt6thread6_StateESt14default_deleteIS1_EEC1EPS1_>:
+    17e0:	f3 0f 1e fa          	endbr64 
+    17e4:	55                   	push   rbp
+    17e5:	48 89 e5             	mov    rbp,rsp
+    17e8:	53                   	push   rbx
+    17e9:	48 83 ec 18          	sub    rsp,0x18
+    17ed:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+    17f1:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+    17f5:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    17f9:	48 89 c7             	mov    rdi,rax
+    17fc:	e8 bb 00 00 00       	call   18bc <_ZNSt5tupleIJPNSt6thread6_StateESt14default_deleteIS1_EEEC1ILb1ELb1EEEv>
+    1801:	48 8b 5d e0          	mov    rbx,QWORD PTR [rbp-0x20]
+    1805:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+    1809:	48 89 c7             	mov    rdi,rax
+    180c:	e8 0b 00 00 00       	call   181c <_ZNSt15__uniq_ptr_implINSt6thread6_StateESt14default_deleteIS1_EE6_M_ptrEv>
+    1811:	48 89 18             	mov    QWORD PTR [rax],rbx
+    1814:	90                   	nop
+    1815:	48 8b 5d f8          	mov    rbx,QWORD PTR [rbp-0x8]
+    1819:	c9                   	leave  
+    181a:	c3                   	ret    
+    181b:	90                   	nop
+
+000000000000181c <_ZNSt15__uniq_ptr_implINSt6thread6_StateESt14default_deleteIS1_EE6_M_ptrEv>:
+    181c:	f3 0f 1e fa          	endbr64 
+    1820:	55                   	push   rbp
+    1821:	48 89 e5             	mov    rbp,rsp
+    1824:	48 83 ec 10          	sub    rsp,0x10
+    1828:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    182c:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1830:	48 89 c7             	mov    rdi,rax
+    1833:	e8 a3 00 00 00       	call   18db <_ZSt3getILm0EJPNSt6thread6_StateESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_>
+    1838:	c9                   	leave  
+    1839:	c3                   	ret    
+
+000000000000183a <_ZNSt10unique_ptrINSt6thread6_StateESt14default_deleteIS1_EE11get_deleterEv>:
+    183a:	f3 0f 1e fa          	endbr64 
+    183e:	55                   	push   rbp
+    183f:	48 89 e5             	mov    rbp,rsp
+    1842:	48 83 ec 10          	sub    rsp,0x10
+    1846:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    184a:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    184e:	48 89 c7             	mov    rdi,rax
+    1851:	e8 a4 00 00 00       	call   18fa <_ZNSt15__uniq_ptr_implINSt6thread6_StateESt14default_deleteIS1_EE10_M_deleterEv>
+    1856:	c9                   	leave  
+    1857:	c3                   	ret    
+
+0000000000001858 <_ZSt4moveIRPNSt6thread6_StateEEONSt16remove_referenceIT_E4typeEOS5_>:
+    1858:	f3 0f 1e fa          	endbr64 
+    185c:	55                   	push   rbp
+    185d:	48 89 e5             	mov    rbp,rsp
+    1860:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1864:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1868:	5d                   	pop    rbp
+    1869:	c3                   	ret    
+
+000000000000186a <_ZNKSt14default_deleteINSt6thread6_StateEEclEPS1_>:
+    186a:	f3 0f 1e fa          	endbr64 
+    186e:	55                   	push   rbp
+    186f:	48 89 e5             	mov    rbp,rsp
+    1872:	48 83 ec 10          	sub    rsp,0x10
+    1876:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    187a:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    187e:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    1882:	48 85 c0             	test   rax,rax
+    1885:	74 0f                	je     1896 <_ZNKSt14default_deleteINSt6thread6_StateEEclEPS1_+0x2c>
+    1887:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+    188a:	48 83 c2 08          	add    rdx,0x8
+    188e:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+    1891:	48 89 c7             	mov    rdi,rax
+    1894:	ff d2                	call   rdx
+    1896:	90                   	nop
+    1897:	c9                   	leave  
+    1898:	c3                   	ret    
+    1899:	90                   	nop
+
+000000000000189a <_ZNSt10_Head_baseILm0EPFvvELb0EEC1ERKS1_>:
+    189a:	f3 0f 1e fa          	endbr64 
+    189e:	55                   	push   rbp
+    189f:	48 89 e5             	mov    rbp,rsp
+    18a2:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    18a6:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+    18aa:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+    18ae:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+    18b1:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    18b5:	48 89 10             	mov    QWORD PTR [rax],rdx
+    18b8:	90                   	nop
+    18b9:	5d                   	pop    rbp
+    18ba:	c3                   	ret    
+    18bb:	90                   	nop
+
+00000000000018bc <_ZNSt5tupleIJPNSt6thread6_StateESt14default_deleteIS1_EEEC1ILb1ELb1EEEv>:
+    18bc:	f3 0f 1e fa          	endbr64 
+    18c0:	55                   	push   rbp
+    18c1:	48 89 e5             	mov    rbp,rsp
+    18c4:	48 83 ec 10          	sub    rsp,0x10
+    18c8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    18cc:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    18d0:	48 89 c7             	mov    rdi,rax
+    18d3:	e8 40 00 00 00       	call   1918 <_ZNSt11_Tuple_implILm0EJPNSt6thread6_StateESt14default_deleteIS1_EEEC1Ev>
+    18d8:	90                   	nop
+    18d9:	c9                   	leave  
+    18da:	c3                   	ret    
+
+00000000000018db <_ZSt3getILm0EJPNSt6thread6_StateESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_>:
+    18db:	f3 0f 1e fa          	endbr64 
+    18df:	55                   	push   rbp
+    18e0:	48 89 e5             	mov    rbp,rsp
+    18e3:	48 83 ec 10          	sub    rsp,0x10
+    18e7:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    18eb:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    18ef:	48 89 c7             	mov    rdi,rax
+    18f2:	e8 4c 00 00 00       	call   1943 <_ZSt12__get_helperILm0EPNSt6thread6_StateEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE>
+    18f7:	c9                   	leave  
+    18f8:	c3                   	ret    
+    18f9:	90                   	nop
+
+00000000000018fa <_ZNSt15__uniq_ptr_implINSt6thread6_StateESt14default_deleteIS1_EE10_M_deleterEv>:
+    18fa:	f3 0f 1e fa          	endbr64 
+    18fe:	55                   	push   rbp
+    18ff:	48 89 e5             	mov    rbp,rsp
+    1902:	48 83 ec 10          	sub    rsp,0x10
+    1906:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    190a:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    190e:	48 89 c7             	mov    rdi,rax
+    1911:	e8 4b 00 00 00       	call   1961 <_ZSt3getILm1EJPNSt6thread6_StateESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_>
+    1916:	c9                   	leave  
+    1917:	c3                   	ret    
+
+0000000000001918 <_ZNSt11_Tuple_implILm0EJPNSt6thread6_StateESt14default_deleteIS1_EEEC1Ev>:
+    1918:	f3 0f 1e fa          	endbr64 
+    191c:	55                   	push   rbp
+    191d:	48 89 e5             	mov    rbp,rsp
+    1920:	48 83 ec 10          	sub    rsp,0x10
+    1924:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1928:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    192c:	48 89 c7             	mov    rdi,rax
+    192f:	e8 4c 00 00 00       	call   1980 <_ZNSt11_Tuple_implILm1EJSt14default_deleteINSt6thread6_StateEEEEC1Ev>
+    1934:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1938:	48 89 c7             	mov    rdi,rax
+    193b:	e8 60 00 00 00       	call   19a0 <_ZNSt10_Head_baseILm0EPNSt6thread6_StateELb0EEC1Ev>
+    1940:	90                   	nop
+    1941:	c9                   	leave  
+    1942:	c3                   	ret    
+
+0000000000001943 <_ZSt12__get_helperILm0EPNSt6thread6_StateEJSt14default_deleteIS1_EEERT0_RSt11_Tuple_implIXT_EJS5_DpT1_EE>:
+    1943:	f3 0f 1e fa          	endbr64 
+    1947:	55                   	push   rbp
+    1948:	48 89 e5             	mov    rbp,rsp
+    194b:	48 83 ec 10          	sub    rsp,0x10
+    194f:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1953:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1957:	48 89 c7             	mov    rdi,rax
+    195a:	e8 5b 00 00 00       	call   19ba <_ZNSt11_Tuple_implILm0EJPNSt6thread6_StateESt14default_deleteIS1_EEE7_M_headERS5_>
+    195f:	c9                   	leave  
+    1960:	c3                   	ret    
+
+0000000000001961 <_ZSt3getILm1EJPNSt6thread6_StateESt14default_deleteIS1_EEERNSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeERS9_>:
+    1961:	f3 0f 1e fa          	endbr64 
+    1965:	55                   	push   rbp
+    1966:	48 89 e5             	mov    rbp,rsp
+    1969:	48 83 ec 10          	sub    rsp,0x10
+    196d:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1971:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1975:	48 89 c7             	mov    rdi,rax
+    1978:	e8 5b 00 00 00       	call   19d8 <_ZSt12__get_helperILm1ESt14default_deleteINSt6thread6_StateEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE>
+    197d:	c9                   	leave  
+    197e:	c3                   	ret    
+    197f:	90                   	nop
+
+0000000000001980 <_ZNSt11_Tuple_implILm1EJSt14default_deleteINSt6thread6_StateEEEEC1Ev>:
+    1980:	f3 0f 1e fa          	endbr64 
+    1984:	55                   	push   rbp
+    1985:	48 89 e5             	mov    rbp,rsp
+    1988:	48 83 ec 10          	sub    rsp,0x10
+    198c:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1990:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1994:	48 89 c7             	mov    rdi,rax
+    1997:	e8 5a 00 00 00       	call   19f6 <_ZNSt10_Head_baseILm1ESt14default_deleteINSt6thread6_StateEELb1EEC1Ev>
+    199c:	90                   	nop
+    199d:	c9                   	leave  
+    199e:	c3                   	ret    
+    199f:	90                   	nop
+
+00000000000019a0 <_ZNSt10_Head_baseILm0EPNSt6thread6_StateELb0EEC1Ev>:
+    19a0:	f3 0f 1e fa          	endbr64 
+    19a4:	55                   	push   rbp
+    19a5:	48 89 e5             	mov    rbp,rsp
+    19a8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    19ac:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    19b0:	48 c7 00 00 00 00 00 	mov    QWORD PTR [rax],0x0
+    19b7:	90                   	nop
+    19b8:	5d                   	pop    rbp
+    19b9:	c3                   	ret    
+
+00000000000019ba <_ZNSt11_Tuple_implILm0EJPNSt6thread6_StateESt14default_deleteIS1_EEE7_M_headERS5_>:
+    19ba:	f3 0f 1e fa          	endbr64 
+    19be:	55                   	push   rbp
+    19bf:	48 89 e5             	mov    rbp,rsp
+    19c2:	48 83 ec 10          	sub    rsp,0x10
+    19c6:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    19ca:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    19ce:	48 89 c7             	mov    rdi,rax
+    19d1:	e8 2f 00 00 00       	call   1a05 <_ZNSt10_Head_baseILm0EPNSt6thread6_StateELb0EE7_M_headERS3_>
+    19d6:	c9                   	leave  
+    19d7:	c3                   	ret    
+
+00000000000019d8 <_ZSt12__get_helperILm1ESt14default_deleteINSt6thread6_StateEEJEERT0_RSt11_Tuple_implIXT_EJS4_DpT1_EE>:
+    19d8:	f3 0f 1e fa          	endbr64 
+    19dc:	55                   	push   rbp
+    19dd:	48 89 e5             	mov    rbp,rsp
+    19e0:	48 83 ec 10          	sub    rsp,0x10
+    19e4:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    19e8:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    19ec:	48 89 c7             	mov    rdi,rax
+    19ef:	e8 23 00 00 00       	call   1a17 <_ZNSt11_Tuple_implILm1EJSt14default_deleteINSt6thread6_StateEEEE7_M_headERS4_>
+    19f4:	c9                   	leave  
+    19f5:	c3                   	ret    
+
+00000000000019f6 <_ZNSt10_Head_baseILm1ESt14default_deleteINSt6thread6_StateEELb1EEC1Ev>:
+    19f6:	f3 0f 1e fa          	endbr64 
+    19fa:	55                   	push   rbp
+    19fb:	48 89 e5             	mov    rbp,rsp
+    19fe:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1a02:	90                   	nop
+    1a03:	5d                   	pop    rbp
+    1a04:	c3                   	ret    
+
+0000000000001a05 <_ZNSt10_Head_baseILm0EPNSt6thread6_StateELb0EE7_M_headERS3_>:
+    1a05:	f3 0f 1e fa          	endbr64 
+    1a09:	55                   	push   rbp
+    1a0a:	48 89 e5             	mov    rbp,rsp
+    1a0d:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1a11:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a15:	5d                   	pop    rbp
+    1a16:	c3                   	ret    
+
+0000000000001a17 <_ZNSt11_Tuple_implILm1EJSt14default_deleteINSt6thread6_StateEEEE7_M_headERS4_>:
+    1a17:	f3 0f 1e fa          	endbr64 
+    1a1b:	55                   	push   rbp
+    1a1c:	48 89 e5             	mov    rbp,rsp
+    1a1f:	48 83 ec 10          	sub    rsp,0x10
+    1a23:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1a27:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a2b:	48 89 c7             	mov    rdi,rax
+    1a2e:	e8 02 00 00 00       	call   1a35 <_ZNSt10_Head_baseILm1ESt14default_deleteINSt6thread6_StateEELb1EE7_M_headERS4_>
+    1a33:	c9                   	leave  
+    1a34:	c3                   	ret    
+
+0000000000001a35 <_ZNSt10_Head_baseILm1ESt14default_deleteINSt6thread6_StateEELb1EE7_M_headERS4_>:
+    1a35:	f3 0f 1e fa          	endbr64 
+    1a39:	55                   	push   rbp
+    1a3a:	48 89 e5             	mov    rbp,rsp
+    1a3d:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1a41:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a45:	5d                   	pop    rbp
+    1a46:	c3                   	ret    
+    1a47:	90                   	nop
+
+0000000000001a48 <_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvvEEEEEED1Ev>:
+    1a48:	f3 0f 1e fa          	endbr64 
+    1a4c:	55                   	push   rbp
+    1a4d:	48 89 e5             	mov    rbp,rsp
+    1a50:	48 83 ec 10          	sub    rsp,0x10
+    1a54:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1a58:	48 8d 15 51 22 00 00 	lea    rdx,[rip+0x2251]        # 3cb0 <_ZTVNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvvEEEEEEE+0x10>
+    1a5f:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a63:	48 89 10             	mov    QWORD PTR [rax],rdx
+    1a66:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a6a:	48 89 c7             	mov    rdi,rax
+    1a6d:	e8 ae f6 ff ff       	call   1120 <_ZNSt6thread6_StateD2Ev@plt>
+    1a72:	90                   	nop
+    1a73:	c9                   	leave  
+    1a74:	c3                   	ret    
+    1a75:	90                   	nop
+
+0000000000001a76 <_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvvEEEEEED0Ev>:
+    1a76:	f3 0f 1e fa          	endbr64 
+    1a7a:	55                   	push   rbp
+    1a7b:	48 89 e5             	mov    rbp,rsp
+    1a7e:	48 83 ec 10          	sub    rsp,0x10
+    1a82:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1a86:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a8a:	48 89 c7             	mov    rdi,rax
+    1a8d:	e8 b6 ff ff ff       	call   1a48 <_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvvEEEEEED1Ev>
+    1a92:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1a96:	be 10 00 00 00       	mov    esi,0x10
+    1a9b:	48 89 c7             	mov    rdi,rax
+    1a9e:	e8 cd f6 ff ff       	call   1170 <_ZdlPvm@plt>
+    1aa3:	c9                   	leave  
+    1aa4:	c3                   	ret    
+    1aa5:	90                   	nop
+
+0000000000001aa6 <_ZNSt6thread11_State_implINS_8_InvokerISt5tupleIJPFvvEEEEEE6_M_runEv>:
+    1aa6:	f3 0f 1e fa          	endbr64 
+    1aaa:	55                   	push   rbp
+    1aab:	48 89 e5             	mov    rbp,rsp
+    1aae:	48 83 ec 10          	sub    rsp,0x10
+    1ab2:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1ab6:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1aba:	48 83 c0 08          	add    rax,0x8
+    1abe:	48 89 c7             	mov    rdi,rax
+    1ac1:	e8 04 00 00 00       	call   1aca <_ZNSt6thread8_InvokerISt5tupleIJPFvvEEEEclEv>
+    1ac6:	90                   	nop
+    1ac7:	c9                   	leave  
+    1ac8:	c3                   	ret    
+    1ac9:	90                   	nop
+
+0000000000001aca <_ZNSt6thread8_InvokerISt5tupleIJPFvvEEEEclEv>:
+    1aca:	f3 0f 1e fa          	endbr64 
+    1ace:	55                   	push   rbp
+    1acf:	48 89 e5             	mov    rbp,rsp
+    1ad2:	48 83 ec 10          	sub    rsp,0x10
+    1ad6:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1ada:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1ade:	48 89 c7             	mov    rdi,rax
+    1ae1:	e8 04 00 00 00       	call   1aea <_ZNSt6thread8_InvokerISt5tupleIJPFvvEEEE9_M_invokeIJLm0EEEEvSt12_Index_tupleIJXspT_EEE>
+    1ae6:	90                   	nop
+    1ae7:	c9                   	leave  
+    1ae8:	c3                   	ret    
+    1ae9:	90                   	nop
+
+0000000000001aea <_ZNSt6thread8_InvokerISt5tupleIJPFvvEEEE9_M_invokeIJLm0EEEEvSt12_Index_tupleIJXspT_EEE>:
+    1aea:	f3 0f 1e fa          	endbr64 
+    1aee:	55                   	push   rbp
+    1aef:	48 89 e5             	mov    rbp,rsp
+    1af2:	48 83 ec 10          	sub    rsp,0x10
+    1af6:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1afa:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1afe:	48 89 c7             	mov    rdi,rax
+    1b01:	e8 13 00 00 00       	call   1b19 <_ZSt4moveIRSt5tupleIJPFvvEEEEONSt16remove_referenceIT_E4typeEOS6_>
+    1b06:	48 89 c7             	mov    rdi,rax
+    1b09:	e8 1d 00 00 00       	call   1b2b <_ZSt3getILm0EJPFvvEEEONSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeEOS6_>
+    1b0e:	48 89 c7             	mov    rdi,rax
+    1b11:	e8 3b 00 00 00       	call   1b51 <_ZSt8__invokeIPFvvEJEENSt15__invoke_resultIT_JDpT0_EE4typeEOS3_DpOS4_>
+    1b16:	90                   	nop
+    1b17:	c9                   	leave  
+    1b18:	c3                   	ret    
+
+0000000000001b19 <_ZSt4moveIRSt5tupleIJPFvvEEEEONSt16remove_referenceIT_E4typeEOS6_>:
+    1b19:	f3 0f 1e fa          	endbr64 
+    1b1d:	55                   	push   rbp
+    1b1e:	48 89 e5             	mov    rbp,rsp
+    1b21:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1b25:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b29:	5d                   	pop    rbp
+    1b2a:	c3                   	ret    
+
+0000000000001b2b <_ZSt3getILm0EJPFvvEEEONSt13tuple_elementIXT_ESt5tupleIJDpT0_EEE4typeEOS6_>:
+    1b2b:	f3 0f 1e fa          	endbr64 
+    1b2f:	55                   	push   rbp
+    1b30:	48 89 e5             	mov    rbp,rsp
+    1b33:	48 83 ec 10          	sub    rsp,0x10
+    1b37:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1b3b:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b3f:	48 89 c7             	mov    rdi,rax
+    1b42:	e8 31 00 00 00       	call   1b78 <_ZSt12__get_helperILm0EPFvvEJEERT0_RSt11_Tuple_implIXT_EJS2_DpT1_EE>
+    1b47:	48 89 c7             	mov    rdi,rax
+    1b4a:	e8 47 00 00 00       	call   1b96 <_ZSt7forwardIPFvvEEOT_RNSt16remove_referenceIS2_E4typeE>
+    1b4f:	c9                   	leave  
+    1b50:	c3                   	ret    
+
+0000000000001b51 <_ZSt8__invokeIPFvvEJEENSt15__invoke_resultIT_JDpT0_EE4typeEOS3_DpOS4_>:
+    1b51:	f3 0f 1e fa          	endbr64 
+    1b55:	55                   	push   rbp
+    1b56:	48 89 e5             	mov    rbp,rsp
+    1b59:	48 83 ec 10          	sub    rsp,0x10
+    1b5d:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1b61:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b65:	48 89 c7             	mov    rdi,rax
+    1b68:	e8 29 00 00 00       	call   1b96 <_ZSt7forwardIPFvvEEOT_RNSt16remove_referenceIS2_E4typeE>
+    1b6d:	48 89 c7             	mov    rdi,rax
+    1b70:	e8 33 00 00 00       	call   1ba8 <_ZSt13__invoke_implIvPFvvEJEET_St14__invoke_otherOT0_DpOT1_>
+    1b75:	90                   	nop
+    1b76:	c9                   	leave  
+    1b77:	c3                   	ret    
+
+0000000000001b78 <_ZSt12__get_helperILm0EPFvvEJEERT0_RSt11_Tuple_implIXT_EJS2_DpT1_EE>:
+    1b78:	f3 0f 1e fa          	endbr64 
+    1b7c:	55                   	push   rbp
+    1b7d:	48 89 e5             	mov    rbp,rsp
+    1b80:	48 83 ec 10          	sub    rsp,0x10
+    1b84:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1b88:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1b8c:	48 89 c7             	mov    rdi,rax
+    1b8f:	e8 38 00 00 00       	call   1bcc <_ZNSt11_Tuple_implILm0EJPFvvEEE7_M_headERS2_>
+    1b94:	c9                   	leave  
+    1b95:	c3                   	ret    
+
+0000000000001b96 <_ZSt7forwardIPFvvEEOT_RNSt16remove_referenceIS2_E4typeE>:
+    1b96:	f3 0f 1e fa          	endbr64 
+    1b9a:	55                   	push   rbp
+    1b9b:	48 89 e5             	mov    rbp,rsp
+    1b9e:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1ba2:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1ba6:	5d                   	pop    rbp
+    1ba7:	c3                   	ret    
+
+0000000000001ba8 <_ZSt13__invoke_implIvPFvvEJEET_St14__invoke_otherOT0_DpOT1_>:
+    1ba8:	f3 0f 1e fa          	endbr64 
+    1bac:	55                   	push   rbp
+    1bad:	48 89 e5             	mov    rbp,rsp
+    1bb0:	48 83 ec 10          	sub    rsp,0x10
+    1bb4:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1bb8:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1bbc:	48 89 c7             	mov    rdi,rax
+    1bbf:	e8 d2 ff ff ff       	call   1b96 <_ZSt7forwardIPFvvEEOT_RNSt16remove_referenceIS2_E4typeE>
+    1bc4:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1bc7:	ff d0                	call   rax
+    1bc9:	90                   	nop
+    1bca:	c9                   	leave  
+    1bcb:	c3                   	ret    
+
+0000000000001bcc <_ZNSt11_Tuple_implILm0EJPFvvEEE7_M_headERS2_>:
+    1bcc:	f3 0f 1e fa          	endbr64 
+    1bd0:	55                   	push   rbp
+    1bd1:	48 89 e5             	mov    rbp,rsp
+    1bd4:	48 83 ec 10          	sub    rsp,0x10
+    1bd8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1bdc:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1be0:	48 89 c7             	mov    rdi,rax
+    1be3:	e8 02 00 00 00       	call   1bea <_ZNSt10_Head_baseILm0EPFvvELb0EE7_M_headERS2_>
+    1be8:	c9                   	leave  
+    1be9:	c3                   	ret    
+
+0000000000001bea <_ZNSt10_Head_baseILm0EPFvvELb0EE7_M_headERS2_>:
+    1bea:	f3 0f 1e fa          	endbr64 
+    1bee:	55                   	push   rbp
+    1bef:	48 89 e5             	mov    rbp,rsp
+    1bf2:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+    1bf6:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+    1bfa:	5d                   	pop    rbp
+    1bfb:	c3                   	ret    
+
+Disassembly of section .fini:
+
+0000000000001bfc <_fini>:
+    1bfc:	f3 0f 1e fa          	endbr64 
+    1c00:	48 83 ec 08          	sub    rsp,0x8
+    1c04:	48 83 c4 08          	add    rsp,0x8
+    1c08:	c3                   	ret    

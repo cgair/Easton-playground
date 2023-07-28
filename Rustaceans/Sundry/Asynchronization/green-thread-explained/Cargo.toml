@@ -1,0 +1,16 @@
+[package]
+name = "green-thread-explained"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "assembly"
+path = "src/assembly.rs"
+
+[[bin]]
+name = "bonus"
+path = "src/bonus.rs"

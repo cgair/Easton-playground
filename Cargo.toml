@@ -1,0 +1,45 @@
+[workspace]
+resolver = "2"
+
+members = [
+    # Rustaceans
+    "Rustaceans/Sundry/rust-variable-assignment",
+    "Rustaceans/Sundry/Stack/estimate-thread-stack-size",
+    "Rustaceans/Sundry/Stack/stack-changes-during-function-calls",
+    "Rustaceans/Sundry/write-cpu-adaptation-code",
+    "Rustaceans/Sundry/trait-object",
+    # Iterator trait
+    "Rustaceans/Sundry/iterators",
+
+    # Rust Asynchronization
+    "Rustaceans/Sundry/Asynchronization/green-thread-explained",
+    "Rustaceans/Sundry/Asynchronization/minimio",
+
+    # Rustonomicon
+    "Rustaceans/Rustonomicon/concurrency/race",
+    "Rustaceans/Rustonomicon/data_layout",
+    ## Ownership
+    "Rustaceans/Rustonomicon/ownership/lifetime",
+    "Rustaceans/Rustonomicon/ownership/reference_aliasing",
+    "Rustaceans/Rustonomicon/ownership/hrtbs",
+    "Rustaceans/Rustonomicon/ownership/subtyping_and_variance",
+    "Rustaceans/Rustonomicon/ownership/drop_check",
+    "Rustaceans/Rustonomicon/ownership/phantom_data",
+    ## Type Conversions
+    "Rustaceans/Rustonomicon/type_conversions",
+    ## OBRM
+    "Rustaceans/Rustonomicon/obrm/constructors-destructors",
+
+    # Rust Reference
+    "Rustaceans/RustReference/rust-reference",
+
+    # Effective Rust
+    "Rustaceans/EffectiveRust/types",
+
+    # Rust Design Patterns
+    "Rustaceans/RustDesignPatterns/rust-design-pattern",
+
+    # Operating System
+    "OperatingSystem/concurrency/simulate-deadlock",
+    "OperatingSystem/concurrency/locks",
+]
